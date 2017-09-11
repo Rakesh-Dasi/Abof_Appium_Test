@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38799" started-at="2017-09-11T15:02:55Z" finished-at="2017-09-11T15:03:33Z">
+  <suite name="Default suite" duration-ms="32346" started-at="2017-09-11T15:22:44Z" finished-at="2017-09-11T15:23:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38799" started-at="2017-09-11T15:02:55Z" finished-at="2017-09-11T15:03:33Z">
+    <test name="Default test" duration-ms="32346" started-at="2017-09-11T15:22:44Z" finished-at="2017-09-11T15:23:17Z">
       <class name="com.abof.test.AbofTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.abof.test.AbofTest@60addb54]" name="beforeTest" is-config="true" duration-ms="12275" started-at="2017-09-11T20:32:55Z" finished-at="2017-09-11T20:33:07Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.abof.test.AbofTest@6bdf28bb]" name="beforeTest" is-config="true" duration-ms="8797" started-at="2017-09-11T20:52:44Z" finished-at="2017-09-11T20:52:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="main()[pri:0, instance:com.abof.test.AbofTest@60addb54]" name="main" duration-ms="21984" started-at="2017-09-11T20:33:07Z" finished-at="2017-09-11T20:33:29Z">
+        <test-method status="PASS" signature="main()[pri:0, instance:com.abof.test.AbofTest@6bdf28bb]" name="main" duration-ms="20034" started-at="2017-09-11T20:52:53Z" finished-at="2017-09-11T20:53:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.abof.test.AbofTest@60addb54]" name="tearDown" is-config="true" duration-ms="1236" started-at="2017-09-11T20:33:32Z" finished-at="2017-09-11T20:33:33Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.abof.test.AbofTest@6bdf28bb]" name="tearDown" is-config="true" duration-ms="1202" started-at="2017-09-11T20:53:16Z" finished-at="2017-09-11T20:53:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
