@@ -9,15 +9,18 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.abof.pages.AbofLoginpage;
+import com.abof.utils.ScreenshotUtility;
 
+@Listeners({ScreenshotUtility.class})
 public class AbofTest {
 	
 	static DesiredCapabilities cap;
 	@SuppressWarnings("rawtypes")
-	static AppiumDriver driver;
+	public	static AppiumDriver driver;
   @SuppressWarnings("rawtypes")
  
   @BeforeTest
