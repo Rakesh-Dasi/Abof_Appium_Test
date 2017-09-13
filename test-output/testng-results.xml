@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32346" started-at="2017-09-11T15:22:44Z" finished-at="2017-09-11T15:23:17Z">
+  <suite name="Default suite" duration-ms="27629" started-at="2017-09-13T16:24:06Z" finished-at="2017-09-13T16:24:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32346" started-at="2017-09-11T15:22:44Z" finished-at="2017-09-11T15:23:17Z">
+    <test name="Default test" duration-ms="27629" started-at="2017-09-13T16:24:06Z" finished-at="2017-09-13T16:24:34Z">
       <class name="com.abof.test.AbofTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.abof.test.AbofTest@6bdf28bb]" name="beforeTest" is-config="true" duration-ms="8797" started-at="2017-09-11T20:52:44Z" finished-at="2017-09-11T20:52:53Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.abof.test.AbofTest@6bdf28bb]" name="beforeTest" is-config="true" duration-ms="16328" started-at="2017-09-13T21:54:06Z" finished-at="2017-09-13T21:54:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="main()[pri:0, instance:com.abof.test.AbofTest@6bdf28bb]" name="main" duration-ms="20034" started-at="2017-09-11T20:52:53Z" finished-at="2017-09-11T20:53:13Z">
+        <test-method status="FAIL" signature="main()[pri:0, instance:com.abof.test.AbofTest@6bdf28bb]" name="main" duration-ms="3998" started-at="2017-09-13T21:54:23Z" finished-at="2017-09-13T21:54:27Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: Locator map: 
+- native content: "By.id: com.abof.android:id/email_login_btn" 
+- html content: "by id or name "loginBtn""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'ONGC-Del-BPM', ip: '172.16.3.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.id: com.abof.android:id/email_login_btn" 
+- html content: "by id or name "loginBtn""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'ONGC-Del-BPM', ip: '172.16.3.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: unknown
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$88a3bab.click(<generated>)
+	at com.abof.pages.AbofLoginpage.setUserandPassword(AbofLoginpage.java:31)
+	at com.abof.test.AbofTest.main(AbofTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.abof.test.AbofTest@6bdf28bb]" name="tearDown" is-config="true" duration-ms="1202" started-at="2017-09-11T20:53:16Z" finished-at="2017-09-11T20:53:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.abof.test.AbofTest@6bdf28bb]" name="tearDown" is-config="true" duration-ms="1463" started-at="2017-09-13T21:54:32Z" finished-at="2017-09-13T21:54:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -17,6 +17,7 @@ public class AbofTest {
 	static DesiredCapabilities cap;
 	@SuppressWarnings("rawtypes")
 	public static AppiumDriver driver;
+	
   @BeforeTest
   public void beforeTest() throws Exception {
 	  
