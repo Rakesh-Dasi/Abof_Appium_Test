@@ -1,6 +1,7 @@
 package com.abof.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumDriver;
@@ -14,18 +15,23 @@ public class AbofLandingpage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	@CacheLookup //Stores the element for further reference and does not look for the element in the webpage.
 	@AndroidFindBy(xpath="//android.widget.ImageButton[@index='0']")
 	public static WebElement navMenu;
 	
+	@CacheLookup
 	@AndroidFindBy(xpath="//android.widget.LinearLayout[@index='8']")
 	public static WebElement whatsHot;
 	
+	@CacheLookup
 	@AndroidFindBy(xpath="//android.widget.LinearLayout[@index='8']")
 	public WebElement shopMen;
 	
+	@CacheLookup
 	@AndroidFindBy(xpath="//android.widget.LinearLayout[@index='8']")
 	public WebElement shopWomen;
 	
+	@CacheLookup
 	@AndroidFindBy(xpath="//android.widget.LinearLayout[@index='8']")
 	public WebElement myOrder;
 	
@@ -34,14 +40,14 @@ public class AbofLandingpage {
 	public void referFriendTC() throws Exception{
 		navMenu.click();
 		Thread.sleep(2000);
-		referFriend.click();
+		whatsHot.click();
 		
 	}
 	
 	public boolean verifyText(String result){
-		String text = referFriend.getText();
+		String text = whatsHot.getText();
 		System.out.println(text);
-		if (referFriend.getText().equals(result))
+		if (whatsHot.getText().equals(result))
 			return true;
 		else
 			return false;

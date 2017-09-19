@@ -1,13 +1,9 @@
 package com.abof.test;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -30,12 +26,20 @@ public class AbofTCTestcase {
 
     
     @Test 
-    public void main() throws Exception{
+    public void main() throws Exception{    	   
+		
+    	AbofLandingpage abof = new AbofLandingpage(driver);
     	
-    	@SuppressWarnings("unused")
-		AbofLandingpage abof = new AbofLandingpage(driver);
     	TearmAndConditions_Action.Execute();
+    	Utils.swipingVerticalBottomToTop();     	
     	
+    }
+    
+    @AfterTest
+    public void tearDown() throws Exception
+    {
+    	Thread.sleep(2000);
+    	driver.quit();
     }
     
 }

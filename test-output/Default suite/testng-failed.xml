@@ -7,7 +7,6 @@
         <methods>
           <include name="beforeTest"/>
           <include name="main"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.abof.test.AbofTest -->
     </classes>
