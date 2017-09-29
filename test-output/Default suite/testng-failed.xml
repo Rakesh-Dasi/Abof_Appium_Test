@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.abof.test.AbofTest">
+      <class name="com.sanalmarket.mobile.merve.DataProvider">
         <methods>
-          <include name="beforeTest"/>
-          <include name="main"/>
+          <include name="test" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.abof.test.AbofTest -->
+      </class> <!-- com.sanalmarket.mobile.merve.DataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

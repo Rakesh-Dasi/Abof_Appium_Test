@@ -16,35 +16,34 @@
 </dependency>
 
 
-<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
-<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
-
-
-
-<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 <dependency>
-    <groupId>log4j</groupId>
-    <artifactId>log4j</artifactId>
-    <version>1.2.17</version>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 
+<!-- Dependencies added from Cucumber Project -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+		
+		
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.9</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.11-beta3</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>xml-apis</groupId>
 			<artifactId>xml-apis</artifactId>
@@ -65,23 +64,27 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>4.0.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
 			<artifactId>json-simple</artifactId>
 			<version>1.1</version>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.6</version>
 			<scope>test</scope>
 		</dependency>
+		
 		<!-- Includes the Sauce JUnit helper libraries -->
 		<dependency>
 			<groupId>com.saucelabs</groupId>
@@ -89,6 +92,7 @@
 			<version>2.1.23</version>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>

@@ -1,5 +1,7 @@
 package com.abof.test;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import io.appium.java_client.AppiumDriver;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -35,7 +37,8 @@ public class AbofTCTestcase {
     	
     }
     
-    @AfterTest
+    @AfterMethod
+	@AfterTest
     public void tearDown() throws Exception
     {
     	Thread.sleep(2000);
